@@ -1,0 +1,232 @@
+#MainActivity.kt----------------------------------------------------------
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.TextView
+
+class MainActivity : AppCompatActivity() {
+
+    private var tv_id: TextView? = null
+    private var tv_pass: TextView? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        tv_id = findViewById(R.id.tv_id)
+        tv_pass = findViewById(R.id.tv_pass)
+        val intent = intent
+        val id = intent.getStringExtra("id")
+        val pass = intent.getStringExtra("pass")
+
+
+
+    }
+}
+
+#LoginActivity.kt-------------------------------------------------------
+
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
+import com.android.volley.Response
+import com.android.volley.toolbox.Volley
+import kotlinx.android.synthetic.main.activity_main.*
+import org.json.JSONException
+import org.json.JSONObject
+
+class LoginActivity : AppCompatActivity() {
+
+    private var et_id: EditText? = null
+    private var et_pass: EditText? = null
+    private var btn_login: Button? = null
+    private var btn_register: Button? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_login)
+
+        et_id = findViewById(R.id.et_id)
+        et_pass = findViewById(R.id.et_pass)
+        btn_login = findViewById(R.id.btn_login)
+        btn_register = findViewById(R.id.btn_register)
+
+        btn_register?.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
+        })
+
+        btn_login?.setOnClickListener(View.OnClickListener {
+
+            val id = et_id?.getText().toString()
+            val pass = et_pass?.getText().toString()
+            val responseListener = Response.Listener<String?> { response ->
+                try {
+                    val jsonObject = JSONObject(response)
+                    val success = jsonObject.getBoolean("success")
+                    if (success) { //성공
+                        val id = jsonObject.getString("id")
+                        val pass = jsonObject.getString("pass")
+                        Toast.makeText(applicationContext, "로그인에 성공하였습니다.", Toast.LENGTH_SHORT)
+                            .show()
+                        val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                        intent.putExtra("id", id)
+                        intent.putExtra("pass", pass)
+                        startActivity(intent)
+                    } else { //로그인에 실패한 경우
+                        Toast.makeText(applicationContext, "회원등록에 실패하였습니다.", Toast.LENGTH_SHORT)
+                            .show()
+                        return@Listener
+                    }
+                } catch (e: JSONException) {
+                    e.printStackTrace()
+                }
+            }
+            val loginRequest = LoginRequest(id, pass, responseListener)
+            val queue = Volley.newRequestQueue(this@LoginActivity)
+            queue.add(loginRequest)
+        })
+    }
+}
+
+#LoginRequest.kt----------------------------------------------
+
+
+import com.android.volley.AuthFailureError
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import java.util.HashMap
+
+class LoginRequest(id: String, password: String, listener: Response.Listener<String?>) :
+    StringRequest(
+        Method.POST, URL, listener, null
+    ) {
+        private val map: MutableMap<String, String>
+
+    //private Map<String, String>parameters;
+    init {
+        map = HashMap()
+        map["id"] = id
+        map["password"] = password
+    }
+
+    @Throws(AuthFailureError::class)
+    override fun getParams(): Map<String, String>? {
+        return map
+    }
+
+    companion object {
+        //서버 URL 설정(php 파일 연동)
+        private const val URL = "http://juhee456.ivyro.net/Login.php"
+    }
+}
+
+#RegisterActivity.kt-----------------------------------------------------
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+import com.android.volley.Response
+import com.android.volley.toolbox.Volley
+import org.json.JSONException
+import org.json.JSONObject
+
+class RegisterActivity : AppCompatActivity() {
+
+    private var et_id: EditText? = null
+    private var et_pass: EditText? = null
+    private var et_name: EditText? = null
+    private var et_age: EditText? = null
+    private var btn_register: Button? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_register)
+
+        //아이디 값 찾아주기
+        et_id = findViewById(R.id.et_id)
+        et_pass = findViewById(R.id.et_pass)
+        et_name = findViewById(R.id.et_name)
+        et_age = findViewById(R.id.et_age)
+
+        //회원가입 버튼 클릭 시 수행
+        btn_register = findViewById(R.id.btn_register)
+        btn_register?.setOnClickListener(View.OnClickListener {
+            val id = et_id?.getText().toString()
+            val pass = et_pass?.getText().toString()
+            val name = et_name?.getText().toString()
+            val age = et_age?.getText().toString().toInt()
+            val responseListener = Response.Listener<String?> { response ->
+                try {
+                    val jsonObject = JSONObject(response)
+                    val success = jsonObject.getBoolean("success")
+                    if (success) { //성공
+                        Toast.makeText(applicationContext, "회원등록에 성공하였습니다.", Toast.LENGTH_SHORT)
+                            .show()
+                        val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+                        startActivity(intent)
+                    } else {
+                        Toast.makeText(applicationContext, "회원등록에 실패하였습니다.", Toast.LENGTH_SHORT)
+                            .show()
+                        return@Listener
+                    }
+                } catch (e: JSONException) {
+                    e.printStackTrace()
+                }
+            }
+            // 서버로 Volley를 이용해서 요청을 함.
+            val registerRequest = RegisterRequest(id, pass, name, age, responseListener)
+            val queue = Volley.newRequestQueue(this@RegisterActivity)
+            queue.add(registerRequest)
+        })
+    }
+}
+
+#Register_Request.kt--------------------------------------------
+
+import com.android.volley.toolbox.StringRequest
+import kotlin.Throws
+import com.android.volley.AuthFailureError
+import com.android.volley.Response
+import java.util.HashMap
+
+class RegisterRequest (
+    id: String,
+    password: String,
+    name: String,
+    age: Int,
+    listener: Response.Listener<String?>?
+    ) : StringRequest(
+    Method.POST, URL, listener, null
+    ) {
+        private val map: MutableMap<String, String>
+
+        //private Map<String, String>parameters;
+        init {
+            map = HashMap()
+            map["id"] = id
+            map["password"] = password
+            map["name"] = name
+            map["age"] = age.toString() + ""
+        }
+
+        @Throws(AuthFailureError::class)
+        override fun getParams(): Map<String, String>? {
+            return map
+        }
+
+        companion object {
+            //서버 URL 설정(php 파일 연동)
+            private const val URL = "http://juhee456.ivyro.net/Register.php"
+        }
+    }
