@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#FFCCCC">
+
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="65dp"
+            android:text="회원가입"
+            android:layout_gravity="center"
+            android:textSize="45sp"
+            android:fontFamily="@font/cafe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/join_id"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:hint="아이디 입력"
+            android:inputType="textEmailAddress" />
+
+
+        <Button
+            android:id="@+id/idcheck_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="중복 확인"
+            android:textColor="@color/white"
+            android:background="@drawable/for_radius"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ※ 영문, 숫자 조합 8~12자 이내"
+            android:layout_marginBottom="40dp"/>
+
+
+    <EditText
+        android:id="@+id/join_password"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="비밀번호 입력"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/join_repw"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호 확인"
+        android:layout_marginBottom="40dp"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/join_name"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:hint="별명 입력"
+        android:inputType="text"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+            android:id="@+id/nicknamecheck_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="중복 확인"
+            android:textColor="@color/white"
+            android:background="@drawable/for_radius" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/join_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:text="회원가입 하기"
+        android:textColor="@color/white"
+        android:background="@drawable/for_radius" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
