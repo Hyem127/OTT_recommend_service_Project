@@ -26,7 +26,7 @@ class JoinActivity : Activity() {
             var joinintent = Intent(applicationContext, LoginActivity::class.java)
             startActivity(joinintent)
             Toast.makeText(getApplicationContext(), "회원가입 완료! 이제 로그인해 보세요.", Toast.LENGTH_LONG).show()
-        }
+        } //얏호 깃허브 연동 성공?
     }
 }
 
