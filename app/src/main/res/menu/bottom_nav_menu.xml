@@ -12,6 +12,6 @@
 
     <item
         android:id="@+id/navigation_mypage"
-        android:icon="@drawable/mypage2"
+        android:icon="@drawable/mypage"
         android:title="마이페이지" />
 </menu>

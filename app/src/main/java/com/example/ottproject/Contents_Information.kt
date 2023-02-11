@@ -15,9 +15,6 @@ class Contents_Information : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.contents_information)
 
-//        netflix.setOnClickListener {
-//            var netflixintent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.netflix.com"))
-//            startActivity(netflixintent)
-//        }
+
             }
     }

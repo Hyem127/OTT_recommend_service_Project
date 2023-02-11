@@ -15,23 +15,10 @@ import com.example.ottproject.databinding.FragmentHomeBinding
 import com.example.ottproject.databinding.FragmentMypageBinding
 
 
-class Fragment_Mypage : Fragment() {
-
-    lateinit var contents_evaluation: Button
-
-    private  var _binding: FragmentMypageBinding? = null
-    private val binding get() = _binding!!
-
+class Frgment_Mypage : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        _binding=FragmentMypageBinding.inflate(inflater, container, false)
-
-            val root:View = binding.root
-            contents_evaluation.setOnClickListener {
-                Intent intent = new Intent(getAcit)
-                startActivity(Intent(this@Fragment_Mypage,ContentsActivity::class.java))
-            }
-            return root
-        }
+        return inflater.inflate(R.layout.fragment_mypage, container, false)
     }
+}
 
 

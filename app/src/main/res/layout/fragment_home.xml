@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1111222333444555666777888999000"
+            android:text="메인화면메인화면메인화면메인화면메인화면"
             android:textSize="200dp"/>
 
         </LinearLayout>
