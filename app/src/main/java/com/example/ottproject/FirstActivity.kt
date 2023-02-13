@@ -12,6 +12,7 @@ class FirstActivity : AppCompatActivity() {
     lateinit var btnLogin: Button
     lateinit var btnJoin: Button
     lateinit var btnLater: Button
+    lateinit var btncontents: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,5 +38,12 @@ class FirstActivity : AppCompatActivity() {
                 startActivity(loginintent)
 
             }
+
+        btncontents = findViewById<Button>(R.id.btncontents)
+        btncontents.setOnClickListener {
+            var contentsintent = Intent(applicationContext, Contents_Information::class.java)
+            startActivity(contentsintent)
+
+        }
     }
 }

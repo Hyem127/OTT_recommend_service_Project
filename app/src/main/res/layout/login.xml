@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
-    android:background="#FFCCCC">
+    android:background="#033159">
 
 
 <LinearLayout
@@ -20,23 +20,26 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="65dp"
             android:text="로그인"
+            android:textColor="@color/white"
             android:layout_gravity="center"
             android:textSize="45sp"
             android:fontFamily="@font/cafe"/>
 
         <EditText
             android:id="@+id/login_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="40dp"
-            android:hint="아이디를 입력하세요."
+            android:hint="  아이디를 입력하세요."
+            android:background="@drawable/for_radius_white"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/login_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="비밀번호를 입력하세요."
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="  비밀번호를 입력하세요."
+            android:background="@drawable/for_radius_white"
             android:layout_marginBottom="60dp"
             android:inputType="textPassword" />
 
@@ -45,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:textSize="20sp"
-            android:background="@drawable/for_radius"
+            android:backgroundTint="#2484BF"
             android:text="로그인 하기" />
 
 
