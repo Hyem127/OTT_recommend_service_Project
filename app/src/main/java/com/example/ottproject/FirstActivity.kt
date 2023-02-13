@@ -13,6 +13,7 @@ class FirstActivity : AppCompatActivity() {
     lateinit var btnJoin: Button
     lateinit var btnLater: Button
     lateinit var btncontents: Button
+    lateinit var btn_contents: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,29 +22,35 @@ class FirstActivity : AppCompatActivity() {
         btnLater = findViewById<Button>(R.id.btnLater)
         btnLater.paintFlags = btnLater.paintFlags or Paint.UNDERLINE_TEXT_FLAG
         btnLater.text = getString(R.string.underlined_text)
-            btnLater.setOnClickListener {
-                var laterintent = Intent(applicationContext, MainActivity::class.java)
-                startActivity(laterintent)
-            }
+        btnLater.setOnClickListener {
+            var laterintent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(laterintent)
+        }
 
         btnJoin = findViewById<Button>(R.id.btnJoin)
-            btnJoin.setOnClickListener {
-                var joinintent = Intent(applicationContext, JoinActivity::class.java)
-                startActivity(joinintent)
-            }
+        btnJoin.setOnClickListener {
+            var joinintent = Intent(applicationContext, JoinActivity::class.java)
+            startActivity(joinintent)
+        }
 
-       btnLogin = findViewById<Button>(R.id.btnLogin)
-            btnLogin.setOnClickListener {
-                var loginintent = Intent(applicationContext, LoginActivity::class.java)
-                startActivity(loginintent)
+        btnLogin = findViewById<Button>(R.id.btnLogin)
+        btnLogin.setOnClickListener {
+            var loginintent = Intent(applicationContext, LoginActivity::class.java)
+            startActivity(loginintent)
 
-            }
+        }
 
         btncontents = findViewById<Button>(R.id.btncontents)
         btncontents.setOnClickListener {
             var contentsintent = Intent(applicationContext, Contents_Information::class.java)
             startActivity(contentsintent)
 
+        }
+
+        btn_contents = findViewById<Button>(R.id.btn_contents)
+        btn_contents.setOnClickListener {
+            var contents_intent = Intent(applicationContext, ContentsActivity::class.java)
+            startActivity(contents_intent)
         }
     }
 }

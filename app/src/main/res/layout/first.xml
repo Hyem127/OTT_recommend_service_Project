@@ -32,7 +32,7 @@
             android:textColor="@color/white"
             android:textSize="25sp"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="#2484BF" />
+            android:background="@drawable/for_radius_blue" />
 
         <TextView
             android:layout_width="match_parent"
@@ -50,14 +50,23 @@
             android:text="회원가입"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:backgroundTint="#2484BF" />
+            android:background="@drawable/for_radius_blue" />
 
         <Button
+            android:layout_marginTop="20dp"
             android:id="@+id/btncontents"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="임의"
-            android:background="@color/white"/>
+            android:background="@drawable/for_radius_white"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="임의"
+            android:background="@drawable/for_radius_white"/>
 
         <Button
             android:id="@+id/btnLater"
