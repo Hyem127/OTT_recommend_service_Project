@@ -122,7 +122,7 @@ class LoginRequest(id: String, password: String, listener: Response.Listener<Str
 
     companion object {
         //서버 URL 설정(php 파일 연동)
-        private const val URL = "http:///Login.php"
+        private const val URL = "http://주소/Login.php"
     }
 }
 
