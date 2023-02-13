@@ -48,8 +48,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:textSize="20sp"
-            android:backgroundTint="#2484BF"
-            android:text="로그인 하기" />
+            android:background="@drawable/for_radius_blue"
+            android:text="로그인 하기"
+            android:textColor="@color/white"/>
 
 
     </LinearLayout>

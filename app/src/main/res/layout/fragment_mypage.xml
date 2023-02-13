@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    android:background="#FFCCCC">
+    android:background="#033159">
 
 
 <FrameLayout
@@ -27,6 +27,7 @@
             android:textSize="35dp"
             android:fontFamily="@font/cafe"
             android:text="마이페이지"
+            android:textColor="@color/white"
             android:layout_marginBottom="100dp" />
 
         <LinearLayout
@@ -34,7 +35,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginBottom="80dp">
+            android:layout_marginBottom="20dp">
 
             <ImageView
                 android:layout_width="100dp"
@@ -48,14 +49,15 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/cafe"
                 android:text="혜민's 님"
-                android:textSize="32dp"
+                android:textColor="@color/white"
+                android:textSize="25dp"
                 android:layout_marginRight="80dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="#FF6666"
+                android:background="@drawable/for_radius_blue"
                 android:textColor="@color/white"
                 android:text="로그아웃" />
         </LinearLayout>
@@ -72,7 +74,10 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:text="작품 평가하러 가기"
-                android:textSize="20dp" />
+                android:textColor="@color/white"
+                android:background="@drawable/for_radius_blue"
+                android:textSize="20dp"
+                android:layout_marginBottom="50dp"/>
 
             <Button
                 android:id="@+id/contents_list"
@@ -80,8 +85,10 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:text="평가한 작품 목록"
+                android:textColor="@color/white"
+                android:background="@drawable/for_radius_blue"
                 android:textSize="20dp"
-                android:layout_marginBottom="50dp"/>
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:id="@+id/community_list"
@@ -89,6 +96,8 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:text="작성한 글 목록"
+                android:textColor="@color/white"
+                android:background="@drawable/for_radius_blue"
                 android:textSize="20dp" />
         </LinearLayout>
 
