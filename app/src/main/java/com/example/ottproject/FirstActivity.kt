@@ -14,6 +14,7 @@ class FirstActivity : AppCompatActivity() {
     lateinit var btnLater: Button
     lateinit var btncontents: Button
     lateinit var btn_contents: Button
+    lateinit var write: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +52,12 @@ class FirstActivity : AppCompatActivity() {
         btn_contents.setOnClickListener {
             var contents_intent = Intent(applicationContext, ContentsActivity::class.java)
             startActivity(contents_intent)
+        }
+
+        write = findViewById<Button>(R.id.write)
+        write.setOnClickListener {
+            var write_intent = Intent(applicationContext, Community_Write::class.java)
+            startActivity(write_intent)
         }
     }
 }

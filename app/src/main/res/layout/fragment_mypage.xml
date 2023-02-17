@@ -25,42 +25,57 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="35dp"
-            android:fontFamily="@font/cafe"
             android:text="마이페이지"
+            android:fontFamily="@font/gmarketsansttfmedium"
             android:textColor="@color/white"
-            android:layout_marginBottom="100dp" />
+            android:layout_marginBottom="70dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="40dp">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
                 android:src="@drawable/fox"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="20dp"/>
+<!--                android:background="@android:color/transparent"-->
+<!--                app:civ_border_overlay="true"-->
+<!--                app:civ_border_width="5dp"-->
+<!--                app:civ_border_color="#000000" //테두리 만들기-->
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/cafe"
                 android:text="혜민's 님"
+                android:fontFamily="@font/gmarketsansttfmedium"
                 android:textColor="@color/white"
                 android:textSize="25dp"
                 android:layout_marginRight="80dp" />
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:background="@drawable/for_radius_blue"
                 android:textColor="@color/white"
-                android:text="로그아웃" />
+                android:text="로그아웃"
+                android:fontFamily="@font/gmarketsansttfmedium"/>
         </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="4px"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -71,31 +86,41 @@
             <Button
                 android:id="@+id/contents_evaluation"
                 android:layout_width="300dp"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:text="작품 평가하러 가기"
+                android:fontFamily="@font/gmarketsansttfmedium"
                 android:textColor="@color/white"
                 android:background="@drawable/for_radius_blue"
                 android:textSize="20dp"
-                android:layout_marginBottom="50dp"/>
+                android:layout_marginBottom="40dp"/>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="4px"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"/>
 
             <Button
                 android:id="@+id/contents_list"
                 android:layout_width="300dp"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:text="평가한 작품 목록"
+                android:fontFamily="@font/gmarketsansttfmedium"
                 android:textColor="@color/white"
                 android:background="@drawable/for_radius_blue"
                 android:textSize="20dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="20dp"/>
 
             <Button
                 android:id="@+id/community_list"
                 android:layout_width="300dp"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:text="작성한 글 목록"
+                android:fontFamily="@font/gmarketsansttfmedium"
                 android:textColor="@color/white"
                 android:background="@drawable/for_radius_blue"
                 android:textSize="20dp" />

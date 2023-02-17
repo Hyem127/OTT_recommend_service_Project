@@ -8,12 +8,6 @@
     android:orientation="vertical"
     android:background="#033159">
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/light"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"/>
 
     <LinearLayout
         android:layout_width="400dp"
@@ -34,6 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="더 글로리"
+            android:fontFamily="@font/gmarketsansttfmedium"
             android:textColor="@color/white"
             android:textSize="30dp"
             android:layout_marginBottom="20dp"/>
@@ -55,6 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="작품 정보"
+                android:fontFamily="@font/gmarketsansttfmedium"
                 android:textColor="@color/white"
                 android:textSize="25dp"
                 android:layout_gravity="left"
@@ -64,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="아악 송혜교 너무 예쁘다"
+                android:fontFamily="@font/gmarketsansttflight"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:layout_gravity="left"
@@ -73,6 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="지금 보러가기"
+                android:fontFamily="@font/gmarketsansttfmedium"
                 android:textColor="@color/white"
                 android:textSize="25dp"
                 android:layout_gravity="left"
@@ -84,27 +82,28 @@
 
                 <Button
                     android:id="@+id/netflix"
-                    android:layout_width="120dp"
-                    android:layout_height="80dp"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
                     android:backgroundTint="@color/black"
                     android:text="N"
                     android:textColor="#FF0000"
                     android:textSize="40dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"/>
 
-                <ImageButton
-                    android:layout_width="110dp"
+                <Button
+                    android:id="@+id/wavve"
+                    android:layout_width="100dp"
                     android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/for_radius_white"
-                    android:src="@drawable/wavve"
-                    android:scaleType="fitXY"/>
+                    android:backgroundTint="#004fff"
+                    android:text="w"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"/>
         </LinearLayout>
 
-
         </LinearLayout>
-
-
 
     </LinearLayout>
 

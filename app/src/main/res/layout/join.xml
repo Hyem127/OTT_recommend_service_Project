@@ -22,22 +22,24 @@
 
             android:layout_marginBottom="65dp"
             android:text="회원가입"
+            android:fontFamily="@font/gmarketsansttfmedium"
             android:textColor="@color/white"
             android:layout_gravity="center"
-            android:textSize="45sp"
-            android:fontFamily="@font/cafe" />
+            android:textSize="45sp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginBottom="5dp">
 
         <EditText
             android:id="@+id/join_id"
             android:layout_width="210dp"
             android:layout_height="40dp"
             android:hint="  아이디 입력"
+            android:fontFamily="@font/gmarketsansttfmedium"
             android:layout_marginRight="10dp"
             android:background="@drawable/for_radius_white"
             android:inputType="textEmailAddress" />
@@ -48,6 +50,7 @@
             android:layout_width="90dp"
             android:layout_height="40dp"
             android:text="중복 확인"
+            android:fontFamily="@font/gmarketsansttfmedium"
             android:textSize="13dp"
             android:textColor="@color/white"
             android:background="@drawable/for_radius_blue"/>
@@ -58,6 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" ※ 영문, 숫자 조합 8~12자 이내"
+            android:fontFamily="@font/gmarketsansttfmedium"
             android:textColor="@color/white"
             android:layout_marginBottom="40dp"/>
 
@@ -68,6 +72,7 @@
         android:layout_height="40dp"
         android:layout_marginBottom="10dp"
         android:hint="  비밀번호 입력"
+        android:fontFamily="@font/gmarketsansttfmedium"
         android:background="@drawable/for_radius_white"
         android:inputType="textPassword" />
 
@@ -76,6 +81,7 @@
         android:layout_width="210dp"
         android:layout_height="40dp"
         android:hint="  비밀번호 확인"
+        android:fontFamily="@font/gmarketsansttfmedium"
         android:background="@drawable/for_radius_white"
         android:layout_marginBottom="40dp"
         android:inputType="textPassword" />
@@ -92,6 +98,7 @@
         android:layout_width="210dp"
         android:layout_height="40dp"
         android:hint="  별명 입력"
+        android:fontFamily="@font/gmarketsansttfmedium"
         android:layout_marginRight="10dp"
         android:background="@drawable/for_radius_white"
         android:inputType="text"/>
@@ -101,6 +108,7 @@
             android:layout_width="90dp"
             android:layout_height="40dp"
             android:text="중복 확인"
+            android:fontFamily="@font/gmarketsansttfmedium"
             android:textSize="13dp"
             android:textColor="@color/white"
             android:background="@drawable/for_radius_blue" />
@@ -113,6 +121,7 @@
         android:layout_height="60dp"
         android:textSize="20sp"
         android:text="회원가입 하기"
+        android:fontFamily="@font/gmarketsansttfmedium"
         android:textColor="@color/white"
         android:background="@drawable/for_radius_blue" />
 
