@@ -38,7 +38,9 @@
             android:id="@+id/join_id"
             android:layout_width="210dp"
             android:layout_height="40dp"
-            android:hint="  아이디 입력"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:hint="아이디 입력"
             android:fontFamily="@font/gmarketsansttfmedium"
             android:layout_marginRight="10dp"
             android:background="@drawable/for_radius_white"
@@ -70,34 +72,48 @@
         android:id="@+id/join_password"
         android:layout_width="210dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="10dp"
-        android:hint="  비밀번호 입력"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="비밀번호 입력"
         android:fontFamily="@font/gmarketsansttfmedium"
         android:background="@drawable/for_radius_white"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"/>
 
     <EditText
         android:id="@+id/join_repw"
         android:layout_width="210dp"
         android:layout_height="40dp"
-        android:hint="  비밀번호 확인"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="비밀번호 확인"
         android:fontFamily="@font/gmarketsansttfmedium"
         android:background="@drawable/for_radius_white"
-        android:layout_marginBottom="40dp"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ※ 영문, 숫자 조합 8~12자 이내"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:textColor="@color/white"
+            android:layout_marginBottom="40dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="80dp">
+        android:layout_marginBottom="5dp">
 
     <EditText
         android:id="@+id/join_name"
         android:layout_width="210dp"
         android:layout_height="40dp"
-        android:hint="  별명 입력"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="별명 입력"
         android:fontFamily="@font/gmarketsansttfmedium"
         android:layout_marginRight="10dp"
         android:background="@drawable/for_radius_white"
@@ -114,6 +130,14 @@
             android:background="@drawable/for_radius_blue" />
 
     </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ※ 한글 5자 이내"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:textColor="@color/white"
+            android:layout_marginBottom="80dp"/>
 
     <Button
         android:id="@+id/join_button"

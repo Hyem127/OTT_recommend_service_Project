@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#033159">
 
@@ -11,14 +11,319 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="메인화면메인화면메인화면메인화면메인화면"
-            android:textSize="200dp"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.widget.SearchView
+                android:layout_width="390dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/for_search"
+                android:closeIcon="@drawable/search_close"
+                android:iconifiedByDefault="false"
+                android:queryBackground="@null"
+                android:queryHint="원하시는 작품을 검색해 보세요."
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:searchIcon="@drawable/search_search"
+                android:layout_marginBottom="50dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이번주 작품 랭킹"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gmarketsansttfmedium"
+                    android:textSize="30dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/scandle"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="50dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/theglory"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2"
+                                    android:textColor="@color/white"
+                                    android:textSize="50dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/love" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3"
+                                    android:textColor="@color/white"
+                                    android:textSize="50dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/slamdunk"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4"
+                                    android:textColor="@color/white"
+                                    android:textSize="50dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/understand"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5"
+                                    android:textColor="@color/white"
+                                    android:textSize="50dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/bluelock"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6"
+                                    android:textColor="@color/white"
+                                    android:textSize="50dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/taxi"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="7"
+                                    android:textColor="@color/white"
+                                    android:textSize="50dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/kill"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="8"
+                                    android:textColor="@color/white"
+                                    android:textSize="50dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/idol"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="9"
+                                    android:textColor="@color/white"
+                                    android:textSize="50dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/sangkyeonni"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10"
+                                    android:textColor="@color/white"
+                                    android:textSize="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/rokaf"/>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+
+
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
