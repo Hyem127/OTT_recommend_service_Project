@@ -7,26 +7,27 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.example.ottproject.databinding.JoinBinding.inflate
 
 
 class Fragment_Mypage : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_mypage, container, false)
+    lateinit var contentsButton : Button
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_mypage, container, false)
+        contentsButton = view.findViewById<Button>(R.id.contents_evaluation)
 
-        val contentsButton = view?.findViewById<Button>(R.id.contents_evaluation)
-
-        contentsButton?.setOnClickListener(object :View.OnClickListener {
-            override fun onClick(v: View?) {
-                val intent = Intent(context, ContentsActivity::class.java)
-                startActivity(intent)
-                // 다른 액티비티에서 전환할 때
-                // activity?.finish()
-            }
-        })
+        contentsButton?.setOnClickListener {
+            System.out.println("?")
+            val intent = Intent(activity, ContentsActivity::class.java)
+            startActivity(intent)
+        }
         return view
     }
-    }
-
+}
 
 
 
