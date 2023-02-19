@@ -32,6 +32,9 @@
         <activity android:name =".ContentsActivity" android:label ="ContentsActivity"/>
         <activity android:name =".Contents_Information" android:label="Contents_Information"/>
         <activity android:name =".Community_Write" android:label="Contents_Write"/>
+        <activity android:name =".OTT_Ranking" android:label="OTT_Ranking"/>
+        <activity android:name =".My_Contents_List" android:label="My_Contents_List"/>
+        <activity android:name =".My_Write_List" android:label="My_Write_List"/>
     </application>
 
 </manifest>

@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#033159">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="50dp">
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -304,14 +304,6 @@
 
                         </LinearLayout>
 
-                        <Button
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_gravity="center"
-                            android:fontFamily="@font/gmarketsansttfmedium"
-                            android:text="더보기"
-                            android:background="@drawable/radius_like"/>
-
                     </LinearLayout>
 
                 </HorizontalScrollView>
@@ -591,6 +583,7 @@
                             </LinearLayout>
 
                             <Button
+                                android:id="@+id/ranking_more"
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:layout_gravity="center"
