@@ -8,13 +8,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="50dp"
         android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="70dp">
 
             <android.widget.SearchView
                 android:layout_width="390dp"
@@ -33,16 +33,16 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="15dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="(앱 이름)의 이번주 작품 랭킹 "
-                    android:textColor="@color/white"
                     android:fontFamily="@font/gmarketsansttfmedium"
-                    android:textSize="25dp"/>
+                    android:text="(앱 이름)의 이번주 작품 랭킹 "
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -57,24 +57,29 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
                             android:layout_marginRight="15dp">
 
                             <FrameLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/scandle"/>
+                                <ImageButton
+                                    android:id="@+id/app_ranking_one"
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/scandle" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="1"
                                     android:textColor="@color/white"
-                                    android:textSize="50dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="50dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -88,18 +93,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/theglory"/>
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/theglory" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="2"
                                     android:textColor="@color/white"
-                                    android:textSize="50dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="50dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -113,18 +121,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/love" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="3"
                                     android:textColor="@color/white"
-                                    android:textSize="50dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="50dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -138,18 +149,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/slamdunk"/>
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/slamdunk" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="4"
                                     android:textColor="@color/white"
-                                    android:textSize="50dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="50dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -163,18 +177,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/understand"/>
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/understand" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="5"
                                     android:textColor="@color/white"
-                                    android:textSize="50dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="50dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -188,18 +205,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/bluelock"/>
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bluelock" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="6"
                                     android:textColor="@color/white"
-                                    android:textSize="50dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="50dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -213,18 +233,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/taxi"/>
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/taxi" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="7"
                                     android:textColor="@color/white"
-                                    android:textSize="50dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="50dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -238,18 +261,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/kill"/>
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kill" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="8"
                                     android:textColor="@color/white"
-                                    android:textSize="50dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="50dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -263,18 +289,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/idol"/>
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/idol" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="9"
                                     android:textColor="@color/white"
-                                    android:textSize="50dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="50dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -288,18 +317,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/sangkyeonni"/>
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/sangkyeonni" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="@font/rokaf"
                                     android:text="10"
                                     android:textColor="@color/white"
-                                    android:textSize="40dp"
-                                    android:fontFamily="@font/rokaf"/>
+                                    android:textSize="40dp" />
                             </FrameLayout>
 
                         </LinearLayout>
@@ -308,19 +340,39 @@
 
                 </HorizontalScrollView>
 
+
                 <LinearLayout
-                    android:layout_marginTop="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="OTT 통합 이번주 작품 랭킹"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/gmarketsansttfmedium"
-                        android:textSize="25dp"/>
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="110dp"
+                            android:fontFamily="@font/gmarketsansttfmedium"
+                            android:text="OTT별 이번주 작품 랭킹"
+                            android:textColor="@color/white"
+                            android:textSize="22dp" />
+
+                        <ImageButton
+                            android:id="@+id/ranking_more"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="#00ff0000"
+                            android:src="@drawable/more"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
 
                     <HorizontalScrollView
                         android:layout_width="wrap_content"
@@ -335,24 +387,28 @@
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
                                 android:layout_marginRight="15dp">
 
                                 <FrameLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
-                                        android:src="@drawable/scandle"/>
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/scandle" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="1"
                                         android:textColor="@color/white"
-                                        android:textSize="50dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="50dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
@@ -366,18 +422,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
-                                        android:src="@drawable/theglory"/>
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/theglory" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="2"
                                         android:textColor="@color/white"
-                                        android:textSize="50dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="50dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
@@ -391,18 +450,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
                                         android:src="@drawable/love" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="3"
                                         android:textColor="@color/white"
-                                        android:textSize="50dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="50dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
@@ -416,18 +478,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
-                                        android:src="@drawable/slamdunk"/>
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/slamdunk" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="4"
                                         android:textColor="@color/white"
-                                        android:textSize="50dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="50dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
@@ -441,18 +506,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
-                                        android:src="@drawable/understand"/>
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/understand" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="5"
                                         android:textColor="@color/white"
-                                        android:textSize="50dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="50dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
@@ -466,18 +534,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
-                                        android:src="@drawable/bluelock"/>
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/bluelock" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="6"
                                         android:textColor="@color/white"
-                                        android:textSize="50dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="50dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
@@ -491,18 +562,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
-                                        android:src="@drawable/taxi"/>
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/taxi" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="7"
                                         android:textColor="@color/white"
-                                        android:textSize="50dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="50dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
@@ -516,18 +590,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
-                                        android:src="@drawable/kill"/>
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/kill" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="8"
                                         android:textColor="@color/white"
-                                        android:textSize="50dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="50dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
@@ -541,18 +618,21 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
-                                        android:src="@drawable/idol"/>
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/idol" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="9"
                                         android:textColor="@color/white"
-                                        android:textSize="50dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="50dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
@@ -566,128 +646,163 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="200dp"
-                                        android:src="@drawable/sangkyeonni"/>
+                                    <ImageButton
+                                        android:layout_width="120dp"
+                                        android:layout_height="180dp"
+                                        android:layout_marginTop="25dp"
+                                        android:padding="0sp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/sangkyeonni" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:fontFamily="@font/rokaf"
                                         android:text="10"
                                         android:textColor="@color/white"
-                                        android:textSize="40dp"
-                                        android:fontFamily="@font/rokaf"/>
+                                        android:textSize="40dp" />
                                 </FrameLayout>
 
                             </LinearLayout>
-
-                            <Button
-                                android:id="@+id/ranking_more"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                android:layout_gravity="center"
-                                android:fontFamily="@font/gmarketsansttfmedium"
-                                android:text="더보기"
-                                android:background="@drawable/radius_like"/>
 
                         </LinearLayout>
 
                     </HorizontalScrollView>
 
-                    <TextView
-                        android:layout_marginTop="30dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/gmarketsansttfmedium"
-                        android:text="이런 작품은 어때요?"
-                        android:textColor="@color/white"
-                        android:textSize="25dp" />
-
-                <HorizontalScrollView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:scrollbars="none">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
                         android:orientation="horizontal">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp">
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="157dp"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/gmarketsansttfmedium"
+                            android:text="이런 작품은 어때요?"
+                            android:textColor="@color/white"
+                            android:textSize="22dp" />
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/understand"/>
-                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/recommend_morebutton"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="#00ff0000"
+                            android:src="@drawable/more"
+                            android:text="더보기"
+                            android:textColor="@color/white" />
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp">
-
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/bluelock"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp">
-
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/taxi"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp">
-
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/kill"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp">
-
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/idol"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp">
-
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
-                                    android:src="@drawable/sangkyeonni"/>
-
-                        </LinearLayout>
 
                     </LinearLayout>
 
-                </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp">
+
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/understand" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp">
+
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bluelock" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp">
+
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/taxi" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp">
+
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kill" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp">
+
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/idol" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="15dp">
+
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/sangkyeonni" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
 
                 </LinearLayout>
 

@@ -26,15 +26,16 @@
                 android:value="" />
 
         </activity>
-        <activity android:name =".MainActivity" android:label="MainActivity"/>
-        <activity android:name =".LoginActivity" android:label ="LoginActivity"/>
-        <activity android:name =".JoinActivity" android:label ="JoinActivity"/>
-        <activity android:name =".ContentsActivity" android:label ="ContentsActivity"/>
-        <activity android:name =".Contents_Information" android:label="Contents_Information"/>
-        <activity android:name =".Community_Write" android:label="Contents_Write"/>
-        <activity android:name =".OTT_Ranking" android:label="OTT_Ranking"/>
-        <activity android:name =".My_Contents_List" android:label="My_Contents_List"/>
-        <activity android:name =".My_Write_List" android:label="My_Write_List"/>
+        <activity android:name=".MainActivity" android:label="MainActivity"/>
+        <activity android:name=".LoginActivity" android:label ="LoginActivity"/>
+        <activity android:name=".JoinActivity" android:label ="JoinActivity"/>
+        <activity android:name=".ContentsActivity" android:label ="ContentsActivity"/>
+        <activity android:name=".Contents_Information" android:label="Contents_Information"/>
+        <activity android:name=".Community_Write" android:label="Contents_Write"/>
+        <activity android:name=".OTT_Ranking" android:label="OTT_Ranking"/>
+        <activity android:name=".My_Contents_List" android:label="My_Contents_List"/>
+        <activity android:name=".My_Write_List" android:label="My_Write_List"/>
+        <activity android:name=".Recommend_All" android:label="Recommend_All"/>
     </application>
 
 </manifest>

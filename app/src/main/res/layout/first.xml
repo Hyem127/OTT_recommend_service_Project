@@ -55,21 +55,6 @@
             android:textSize="25sp"
             android:background="@drawable/for_radius_blue" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_marginTop="20dp"
-                android:id="@+id/btncontents"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="작품정보"
-                android:background="@drawable/for_radius_white"/>
-
-        </LinearLayout>
-
         <Button
             android:id="@+id/btnLater"
             android:layout_width="match_parent"

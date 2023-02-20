@@ -39,12 +39,5 @@ class FirstActivity : AppCompatActivity() {
 
         }
 
-        btncontents = findViewById<Button>(R.id.btncontents)
-        btncontents.setOnClickListener {
-            var contentsintent = Intent(applicationContext, Contents_Information::class.java)
-            startActivity(contentsintent)
-
-        }
-
     }
 }

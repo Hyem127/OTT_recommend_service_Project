@@ -14,7 +14,8 @@
             android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -26,7 +27,7 @@
                 android:fontFamily="@font/gmarketsansttfmedium"/>
 
             <View
-                android:layout_width="370dp"
+                android:layout_width="350dp"
                 android:layout_height="4px"
                 android:background="@color/white"
                 android:layout_gravity="center"
@@ -45,7 +46,7 @@
                     android:text="넷플릭스의 이번주 작품 랭킹 "
                     android:textColor="@color/white"
                     android:fontFamily="@font/gmarketsansttfmedium"
-                    android:textSize="25dp"/>
+                    android:textSize="22dp"/>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -66,9 +67,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/scandle"/>
 
                                 <TextView
@@ -91,9 +95,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/theglory"/>
 
                                 <TextView
@@ -116,9 +123,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/love" />
 
                                 <TextView
@@ -141,9 +151,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/slamdunk"/>
 
                                 <TextView
@@ -166,9 +179,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/understand"/>
 
                                 <TextView
@@ -191,9 +207,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/bluelock"/>
 
                                 <TextView
@@ -216,9 +235,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/taxi"/>
 
                                 <TextView
@@ -241,9 +263,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/kill"/>
 
                                 <TextView
@@ -266,9 +291,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/idol"/>
 
                                 <TextView
@@ -291,9 +319,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/sangkyeonni"/>
 
                                 <TextView
@@ -314,8 +345,26 @@
             </LinearLayout>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <LinearLayout
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="50dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -327,7 +376,7 @@
                     android:text="티빙의 이번주 작품 랭킹 "
                     android:textColor="@color/white"
                     android:fontFamily="@font/gmarketsansttfmedium"
-                    android:textSize="25dp"/>
+                    android:textSize="22dp"/>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -348,9 +397,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/scandle"/>
 
                                 <TextView
@@ -373,9 +425,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/theglory"/>
 
                                 <TextView
@@ -398,9 +453,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/love" />
 
                                 <TextView
@@ -423,9 +481,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/slamdunk"/>
 
                                 <TextView
@@ -448,9 +509,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/understand"/>
 
                                 <TextView
@@ -473,9 +537,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/bluelock"/>
 
                                 <TextView
@@ -498,9 +565,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/taxi"/>
 
                                 <TextView
@@ -523,9 +593,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/kill"/>
 
                                 <TextView
@@ -548,9 +621,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/idol"/>
 
                                 <TextView
@@ -573,9 +649,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/sangkyeonni"/>
 
                                 <TextView
@@ -596,8 +675,24 @@
             </LinearLayout>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <LinearLayout
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="50dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -609,7 +704,7 @@
                     android:text="웨이브의 이번주 작품 랭킹 "
                     android:textColor="@color/white"
                     android:fontFamily="@font/gmarketsansttfmedium"
-                    android:textSize="25dp"/>
+                    android:textSize="22dp"/>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -630,9 +725,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/scandle"/>
 
                                 <TextView
@@ -655,9 +753,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/theglory"/>
 
                                 <TextView
@@ -680,9 +781,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/love" />
 
                                 <TextView
@@ -705,9 +809,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/slamdunk"/>
 
                                 <TextView
@@ -730,9 +837,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/understand"/>
 
                                 <TextView
@@ -755,9 +865,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/bluelock"/>
 
                                 <TextView
@@ -780,9 +893,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/taxi"/>
 
                                 <TextView
@@ -805,9 +921,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/kill"/>
 
                                 <TextView
@@ -830,9 +949,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/idol"/>
 
                                 <TextView
@@ -855,9 +977,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/sangkyeonni"/>
 
                                 <TextView
@@ -878,8 +1003,23 @@
             </LinearLayout>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <LinearLayout
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="50dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -891,7 +1031,7 @@
                     android:text="왓챠의 이번주 작품 랭킹 "
                     android:textColor="@color/white"
                     android:fontFamily="@font/gmarketsansttfmedium"
-                    android:textSize="25dp"/>
+                    android:textSize="22dp"/>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -912,9 +1052,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/scandle"/>
 
                                 <TextView
@@ -937,9 +1080,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/theglory"/>
 
                                 <TextView
@@ -962,9 +1108,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/love" />
 
                                 <TextView
@@ -987,9 +1136,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/slamdunk"/>
 
                                 <TextView
@@ -1012,9 +1164,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/understand"/>
 
                                 <TextView
@@ -1037,9 +1192,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/bluelock"/>
 
                                 <TextView
@@ -1062,9 +1220,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/taxi"/>
 
                                 <TextView
@@ -1087,9 +1248,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/kill"/>
 
                                 <TextView
@@ -1112,9 +1276,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/idol"/>
 
                                 <TextView
@@ -1137,9 +1304,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
 
-                                <ImageView
-                                    android:layout_width="100dp"
-                                    android:layout_height="200dp"
+                                <ImageButton
+                                    android:layout_width="120dp"
+                                    android:layout_height="180dp"
+                                    android:layout_marginTop="25dp"
+                                    android:padding="0sp"
+                                    android:scaleType="centerCrop"
                                     android:src="@drawable/sangkyeonni"/>
 
                                 <TextView
