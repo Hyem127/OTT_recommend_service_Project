@@ -36,6 +36,7 @@
         <activity android:name=".My_Contents_List" android:label="My_Contents_List"/>
         <activity android:name=".My_Write_List" android:label="My_Write_List"/>
         <activity android:name=".Recommend_All" android:label="Recommend_All"/>
+        <activity android:name=".Search_Result" android:label="Search_Result"/>
     </application>
 
 </manifest>

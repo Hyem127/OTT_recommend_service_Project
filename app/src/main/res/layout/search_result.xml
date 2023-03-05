@@ -91,7 +91,7 @@
                                 android:layout_width="100dp"
                                 android:layout_height="150dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/understand"/>
+                                android:src="@drawable/scandle"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -103,20 +103,7 @@
                                 android:layout_width="100dp"
                                 android:layout_height="150dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/bluelock"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp">
-
-                            <ImageView
-                                android:layout_width="100dp"
-                                android:layout_height="150dp"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/taxi"/>
+                                android:src="@drawable/idol"/>
 
                         </LinearLayout>
 
@@ -129,7 +116,20 @@
                                 android:layout_width="100dp"
                                 android:layout_height="150dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/kill"/>
+                                android:src="@drawable/theglory"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/sangkyeonni"/>
 
                         </LinearLayout>
 
