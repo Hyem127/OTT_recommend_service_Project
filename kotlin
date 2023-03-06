@@ -129,57 +129,91 @@ class LoginRequest(id: String, password: String, listener: Response.Listener<Str
 #RegisterActivity.kt-----------------------------------------------------
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
 import android.os.Bundle
+import android.text.Editable
+import android.text.InputFilter
+import android.text.TextWatcher
+import android.util.Patterns
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.android.volley.Response
 import com.android.volley.toolbox.Volley
+import kotlinx.android.synthetic.main.activity_register.*
 import org.json.JSONException
 import org.json.JSONObject
+import java.util.regex.Pattern
+
 
 class RegisterActivity : AppCompatActivity() {
 
     private var et_id: EditText? = null
     private var et_pass: EditText? = null
     private var et_name: EditText? = null
+    private var et_repass: EditText? = null
     private var btn_register: Button? = null
-
+    private var validate_button: Button? = null
+    private var btn_namecheck: Button? = null
+    private var dialog: AlertDialog? = null
+    private var validate = false
+    private var namevalidate = false
+    private val passvalidate = "[_A-Za-z0-9-]+(\\/[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        //아이디 값 찾아주기
+
         et_id = findViewById(R.id.et_id)
         et_pass = findViewById(R.id.et_pass)
+        et_repass = findViewById(R.id.et_repass)
         et_name = findViewById(R.id.et_name)
 
-        //회원가입 버튼 클릭 시 수행
-        btn_register = findViewById(R.id.btn_register)
-        btn_register?.setOnClickListener(View.OnClickListener {
+        //아이디 중복체크 버튼 클릭 시 수행
+        validate_button = findViewById(R.id.validate_button)
+        validate_button?.setOnClickListener(View.OnClickListener {
 
             //입력되어 있는 값을 get 해온다
             val id = et_id?.getText().toString()
-            val pass = et_pass?.getText().toString()
-            val name = et_name?.getText().toString()
-
+            if (validate) {
+                return@OnClickListener
+            }
+            if (id == "") {
+                val builder = AlertDialog.Builder(this@RegisterActivity)
+                builder.setMessage("아이디를 적어주세요.")
+                    .setPositiveButton("확인", null)
+                    .create()
+                builder.show()
+                return@OnClickListener
+            }
+//            else if (id != ("/^[a-z]/i")) {
+//                val builder = AlertDialog.Builder(this@RegisterActivity)
+//                builder.setMessage("빈 칸 없이 입력해주세요.")
+//                    .setPositiveButton("확인", null)
+//                    .create()
+//                builder.show()
+//                return@OnClickListener
+//        }
 
             val responseListener = Response.Listener<String?> { response ->
 
                 try {
                     val jsonObject = JSONObject(response)
-
                     val success = jsonObject.getBoolean("success")
+
                     if (success) { //성공
-                        Toast.makeText(applicationContext, "회원등록에 성공하였습니다.", Toast.LENGTH_SHORT)
+                        Toast.makeText(applicationContext, "사용가능한 아이디입니다.", Toast.LENGTH_SHORT)
                             .show()
-                        val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
-                        startActivity(intent)
+
+                        validate = true
+                        validate_button?.setBackgroundColor(getResources().getColor(R.color.colorGray))
                     } else {
-                        Toast.makeText(applicationContext, "회원등록에 실패하였습니다.", Toast.LENGTH_SHORT)
+                        Toast.makeText(applicationContext, "사용할 수 없는 아이디입니다.", Toast.LENGTH_SHORT)
                             .show()
                         return@Listener
                     }
@@ -187,13 +221,191 @@ class RegisterActivity : AppCompatActivity() {
                     e.printStackTrace()
                 }
             }
-            // 서버로 Volley를 이용해서 요청을 함.
-            val registerRequest = RegisterRequest(id, pass, name, responseListener)
+            val validateRequest = ValidateRequest(id, responseListener)
             val queue = Volley.newRequestQueue(this@RegisterActivity)
-            queue.add(registerRequest)
+            queue.add(validateRequest)
+
         })
-    }
-}
+        
+//        et_pass?.addTextChangedListener(object : TextWatcher {
+//
+//            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+//            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+//
+//            override fun afterTextChanged(p0: Editable?) {
+//
+//
+////                if(Pattern.matches("^(?=.*\\d)(?=.*[~`!@#$%\\^&*()-])(?=.*[a-zA-Z]).{8,20}$", et_pass) {
+////                    et_pass?.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.purple_700))
+////                } else {
+////                    et_pass?.setTextColor(ContextCompat.getColor(applicationContext!!, R.color.colorWarning))
+////                }
+////            }
+////        })
+
+
+                //비밀번호 일치 여부 확인하기
+
+                et_repass?.addTextChangedListener(object : TextWatcher {
+                    // EditText에 문자 입력 전
+                    override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+
+                    // EditText에 변화가 있을 경우
+                    override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+
+                    // EditText 입력이 끝난 후
+                    override fun afterTextChanged(p0: Editable?) {
+                        if (et_pass?.getText().toString().equals(et_repass?.getText().toString())) {
+                            et_repass?.setTextColor(
+                                ContextCompat.getColor(
+                                    applicationContext!!,
+                                    R.color.purple_700
+                                )
+                            )
+                        } else {
+                            et_repass?.setTextColor(
+                                ContextCompat.getColor(
+                                    applicationContext!!,
+                                    R.color.colorWarning
+                                )
+                            )
+                        }
+                    }
+                })
+
+                //별명 중복체크 버튼 클릭 시 수행
+                btn_namecheck = findViewById(R.id.btn_namecheck)
+                btn_namecheck?.setOnClickListener(View.OnClickListener {
+
+                    //입력되어 있는 값을 get 해온다
+                    val name = et_name?.getText().toString()
+                    if (namevalidate) {
+                        return@OnClickListener
+                    }
+                    if (name == "") {
+                        val builder = AlertDialog.Builder(this@RegisterActivity)
+                        builder.setMessage("별명을 적어주세요.")
+                            .setPositiveButton("확인", null)
+                            .create()
+                        builder.show()
+                        return@OnClickListener
+                    }
+
+                    val responseListener = Response.Listener<String?> { response ->
+
+                        try {
+                            val jsonObject = JSONObject(response)
+                            val success = jsonObject.getBoolean("success")
+
+                            if (success) { //성공
+                                Toast.makeText(
+                                    applicationContext,
+                                    "사용가능한 별명입니다.",
+                                    Toast.LENGTH_SHORT
+                                )
+                                    .show()
+
+                                namevalidate = true
+                                btn_namecheck?.setBackgroundColor(getResources().getColor(R.color.colorGray))
+                            } else {
+                                Toast.makeText(
+                                    applicationContext,
+                                    "사용할 수 없는 별명입니다.",
+                                    Toast.LENGTH_SHORT
+                                )
+                                    .show()
+                                return@Listener
+                            }
+                        } catch (e: JSONException) {
+                            e.printStackTrace()
+                        }
+                    }
+                    val namevalidateRequest = nameValidateRequest(name, responseListener)
+                    val queue = Volley.newRequestQueue(this@RegisterActivity)
+                    queue.add(namevalidateRequest)
+
+                })
+
+                //회원가입 버튼 클릭 시 수행
+                btn_register = findViewById(R.id.btn_register)
+                btn_register?.setOnClickListener(View.OnClickListener {
+
+                    //입력되어 있는 값을 get 해온다
+                    val id = et_id?.getText().toString()
+                    val password = et_pass?.getText().toString()
+                    val name = et_name?.getText().toString()
+
+
+                    if (id == "" || password == "" || name == "") {
+                        val builder = AlertDialog.Builder(this@RegisterActivity)
+                        builder.setMessage("빈 칸 없이 입력해주세요.")
+                            .setPositiveButton("확인", null)
+                            .create()
+                        builder.show()
+                        return@OnClickListener
+                    } else if (!validate) {
+                        val builder = AlertDialog.Builder(this@RegisterActivity)
+                        builder.setMessage("아이디 중복체크를 해주세요.")
+                            .setPositiveButton("확인", null)
+                            .create()
+                        builder.show()
+                        return@OnClickListener
+                    } else if (!namevalidate) {
+                        val builder = AlertDialog.Builder(this@RegisterActivity)
+                        builder.setMessage("별명 중복체크를 해주세요.")
+                            .setPositiveButton("확인", null)
+                            .create()
+                        builder.show()
+                        return@OnClickListener
+                    } else if (et_pass !== et_repass) {
+                        val builder = AlertDialog.Builder(this@RegisterActivity)
+                        builder.setMessage("비밀번호가 다릅니다.")
+                            .setPositiveButton("확인", null)
+                            .create()
+                        builder.show()
+                        return@OnClickListener
+                    }
+
+                    val responseListener = Response.Listener<String?> { response ->
+
+                        try {
+                            val jsonObject = JSONObject(response)
+                            val success = jsonObject.getBoolean("success")
+
+                            if (success) { //성공
+                                Toast.makeText(
+                                    applicationContext,
+                                    "회원등록에 성공하였습니다.",
+                                    Toast.LENGTH_SHORT
+                                )
+                                    .show()
+                                val intent =
+                                    Intent(this@RegisterActivity, LoginActivity::class.java)
+                                startActivity(intent)
+                            } else {
+                                Toast.makeText(
+                                    applicationContext,
+                                    "회원등록에 실패하였습니다.",
+                                    Toast.LENGTH_SHORT
+                                )
+                                    .show()
+                                return@Listener
+                            }
+                        } catch (e: JSONException) {
+                            e.printStackTrace()
+                        }
+                    }
+
+                    // 서버로 Volley를 이용해서 요청을 함.
+                    val registerRequest = RegisterRequest(id, password, name, responseListener)
+                    val queue = Volley.newRequestQueue(this@RegisterActivity)
+                    queue.add(registerRequest)
+
+                })
+            }
+        }
+
+
 
 #Register_Request.kt--------------------------------------------
 
