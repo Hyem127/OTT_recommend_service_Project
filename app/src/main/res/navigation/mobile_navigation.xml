@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.ottproject.Fragment_Home"
+        android:name="com.example.ottproject.Fragment.Fragment_Home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_community"
-        android:name="com.example.ottproject.Fragment_Community"
+        android:name="com.example.ottproject.Fragment.Fragment_Community"
         tools:layout="@layout/fragment_community" />
 
     <fragment
         android:id="@+id/navigation_mypage"
-        android:name="com.example.ottproject.Fragment_Mypage"
+        android:name="com.example.ottproject.Fragment.Fragment_Mypage"
         tools:layout="@layout/fragment_mypage" />
 
 </navigation>

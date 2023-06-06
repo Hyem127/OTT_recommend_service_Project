@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -16,12 +16,25 @@
         android:textColor="@color/white"
         android:fontFamily="@font/gmarketsansttfmedium"
         android:textSize="45dp"
-        android:layout_marginBottom="70dp"/>
+        android:layout_marginBottom="50dp"/>
 
-    <LinearLayout
+    <View
+        android:layout_width="350dp"
+        android:layout_height="4px"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="350dp"
@@ -108,10 +121,10 @@
 
             </LinearLayout>
 
+            </LinearLayout>
+
         </LinearLayout>
 
-
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

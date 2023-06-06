@@ -9,6 +9,7 @@
 
 
     <LinearLayout
+        android:layout_marginTop="40dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -18,11 +19,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="130dp"
+            android:layout_marginBottom="70dp"
             android:fontFamily="@font/gmarketsansttfmedium"
             android:text="환영합니다!"
             android:textColor="@color/white"
             android:textSize="45sp" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/good"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp">
+        </ImageView>
 
         <Button
             android:id="@+id/btnLogin"
@@ -32,7 +41,7 @@
             android:fontFamily="@font/gmarketsansttfmedium"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/for_radius_blue" />
 
         <TextView
@@ -42,8 +51,8 @@
             android:text="또는"
             android:fontFamily="@font/gmarketsansttfmedium"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            android:layout_marginBottom="20dp" />
+            android:textSize="17sp"
+            android:layout_marginBottom="15dp" />
 
         <Button
             android:id="@+id/btnJoin"
@@ -59,7 +68,7 @@
             android:id="@+id/btnLater"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="130dp"
+            android:layout_marginTop="30dp"
             android:clickable="true"
             android:gravity="center"
             android:background="@android:color/transparent"

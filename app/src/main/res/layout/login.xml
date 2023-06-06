@@ -9,16 +9,24 @@
     android:background="#033159">
 
 
-<LinearLayout
+    <LinearLayout
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:orientation="vertical">
 
+        <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/good2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp">
+        </ImageView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="65dp"
+            android:layout_marginBottom="60dp"
             android:text="로그인"
             android:fontFamily="@font/gmarketsansttfmedium"
             android:textColor="@color/white"
@@ -34,7 +42,7 @@
             android:hint="아이디를 입력하세요."
             android:fontFamily="@font/gmarketsansttfmedium"
             android:background="@drawable/for_radius_white"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="30dp"
             android:inputType="text" />
 
         <EditText

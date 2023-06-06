@@ -19,7 +19,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_marginBottom="65dp"
             android:text="회원가입"
             android:fontFamily="@font/gmarketsansttfmedium"
@@ -48,7 +47,7 @@
 
 
         <Button
-            android:id="@+id/idcheck_button"
+            android:id="@+id/join_idcheck"
             android:layout_width="90dp"
             android:layout_height="40dp"
             android:text="중복 확인"
@@ -120,7 +119,7 @@
         android:inputType="text"/>
 
         <Button
-            android:id="@+id/nicknamecheck_button"
+            android:id="@+id/join_namecheck"
             android:layout_width="90dp"
             android:layout_height="40dp"
             android:text="중복 확인"

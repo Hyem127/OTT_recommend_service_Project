@@ -108,6 +108,7 @@
                                     android:text="2"
                                     android:textColor="@color/white"
                                     android:textSize="50dp" />
+
                             </FrameLayout>
 
                         </LinearLayout>
@@ -340,7 +341,6 @@
 
                 </HorizontalScrollView>
 
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -355,8 +355,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
                             android:layout_marginLeft="15dp"
+                            android:layout_marginTop="3dp"
                             android:layout_marginRight="110dp"
                             android:fontFamily="@font/gmarketsansttfmedium"
                             android:text="OTT별 이번주 작품 랭킹"
@@ -679,9 +679,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
                             android:layout_marginTop="3dp"
                             android:layout_marginRight="157dp"
-                            android:layout_marginLeft="15dp"
                             android:fontFamily="@font/gmarketsansttfmedium"
                             android:text="이런 작품은 어때요?"
                             android:textColor="@color/white"
@@ -708,6 +708,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
                             android:orientation="horizontal">
 
                             <LinearLayout
@@ -719,7 +720,6 @@
                                 <ImageButton
                                     android:layout_width="120dp"
                                     android:layout_height="180dp"
-                                    android:layout_marginTop="25dp"
                                     android:padding="0sp"
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/understand" />
@@ -733,7 +733,6 @@
                                 <ImageButton
                                     android:layout_width="120dp"
                                     android:layout_height="180dp"
-                                    android:layout_marginTop="25dp"
                                     android:padding="0sp"
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/bluelock" />
@@ -748,7 +747,6 @@
                                 <ImageButton
                                     android:layout_width="120dp"
                                     android:layout_height="180dp"
-                                    android:layout_marginTop="25dp"
                                     android:padding="0sp"
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/taxi" />
@@ -763,7 +761,6 @@
                                 <ImageButton
                                     android:layout_width="120dp"
                                     android:layout_height="180dp"
-                                    android:layout_marginTop="25dp"
                                     android:padding="0sp"
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/kill" />
@@ -778,7 +775,6 @@
                                 <ImageButton
                                     android:layout_width="120dp"
                                     android:layout_height="180dp"
-                                    android:layout_marginTop="25dp"
                                     android:padding="0sp"
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/idol" />
@@ -793,7 +789,6 @@
                                 <ImageButton
                                     android:layout_width="120dp"
                                     android:layout_height="180dp"
-                                    android:layout_marginTop="25dp"
                                     android:padding="0sp"
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/sangkyeonni" />
@@ -805,6 +800,7 @@
                     </HorizontalScrollView>
 
                 </LinearLayout>
+
 
             </LinearLayout>
 

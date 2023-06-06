@@ -5,9 +5,8 @@
     android:orientation="vertical"
     android:background="#033159">
 
-
     <TextView
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -15,55 +14,387 @@
         android:textColor="@color/white"
         android:fontFamily="@font/gmarketsansttfmedium"
         android:textSize="45dp"
-        android:layout_marginBottom="70dp"/>
+        android:layout_marginBottom="50dp"/>
 
-    <TabHost
-        android:layout_width="match_parent"
+    <View
+        android:layout_width="350dp"
+        android:layout_height="4px"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@android:id/tabhost">
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
 
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="전체보기"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/for_radius_darkblue"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="좋아요"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/for_radius_lightblue"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="싫어요"
+            android:fontFamily="@font/gmarketsansttfmedium"
+            android:background="@drawable/for_radius_lightblue"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="4px"
+        android:background="@color/white"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="22dp">
 
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/white">
-
-            </TabWidget>
-
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@android:id/tabcontent">
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/all"
-                    android:orientation="vertical" >
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="110dp"
+                            android:layout_height="170dp"
+                            android:padding="0sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/scandle"/>
+
+                        <ImageView
+                            android:layout_marginTop="125dp"
+                            android:layout_marginLeft="65dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/like"/>
+
+                    </FrameLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:id="@+id/like">
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="170dp"
+                                android:padding="0sp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/scandle"/>
+
+                            <ImageView
+                                android:layout_marginTop="125dp"
+                                android:layout_marginLeft="65dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/like"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:id="@+id/hate">
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="170dp"
+                                android:padding="0sp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/scandle"/>
+
+                            <ImageView
+                                android:layout_marginTop="125dp"
+                                android:layout_marginLeft="65dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/like"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            //////////////////
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="500dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="110dp"
+                            android:layout_height="170dp"
+                            android:padding="0sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/scandle"/>
+
+                        <ImageView
+                            android:layout_marginTop="125dp"
+                            android:layout_marginLeft="65dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hate"/>
+
+                    </FrameLayout>
+
                 </LinearLayout>
 
-            </FrameLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="170dp"
+                                android:padding="0sp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/scandle"/>
+
+                            <ImageView
+                                android:layout_marginTop="125dp"
+                                android:layout_marginLeft="65dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/hate"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="170dp"
+                                android:padding="0sp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/scandle"/>
+
+                            <ImageView
+                                android:layout_marginTop="125dp"
+                                android:layout_marginLeft="65dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/hate"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            //////////////////
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="110dp"
+                            android:layout_height="170dp"
+                            android:padding="0sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/scandle"/>
+
+                        <ImageView
+                            android:layout_marginTop="125dp"
+                            android:layout_marginLeft="65dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/like"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="170dp"
+                                android:padding="0sp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/scandle"/>
+
+                            <ImageView
+                                android:layout_marginTop="125dp"
+                                android:layout_marginLeft="65dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/like"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:layout_width="110dp"
+                                android:layout_height="170dp"
+                                android:padding="0sp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/scandle"/>
+
+                            <ImageView
+                                android:layout_marginTop="125dp"
+                                android:layout_marginLeft="65dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/like"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            //////////////////
+
         </LinearLayout>
-    </TabHost>
+
+
+
+
+    </ScrollView>
 
 </LinearLayout>
