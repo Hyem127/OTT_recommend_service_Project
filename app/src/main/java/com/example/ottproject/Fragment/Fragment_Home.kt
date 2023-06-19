@@ -5,19 +5,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import com.example.ottproject.Home.Contents_Information
 import com.example.ottproject.Home.OTT_Ranking
 import com.example.ottproject.R
 import com.example.ottproject.Home.Recommend_All
+import com.example.ottproject.SearchActivity
 
 class Fragment_Home : Fragment() {
 
     lateinit var moreButton : ImageButton
     lateinit var recommend_moreButton : ImageButton
-
     lateinit var ar_one : ImageButton
+    lateinit var searchButton: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,6 +43,12 @@ class Fragment_Home : Fragment() {
         ar_one = view.findViewById<ImageButton>(R.id.app_ranking_one)
         ar_one?.setOnClickListener {
             val intent = Intent(activity, Contents_Information::class.java)
+            startActivity(intent)
+        }
+
+        searchButton = view.findViewById<Button>(R.id.go_search)
+        searchButton?.setOnClickListener {
+            val intent = Intent(activity, SearchActivity::class.java)
             startActivity(intent)
         }
         return view

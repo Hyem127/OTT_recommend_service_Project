@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#033159">
+
+
+            <android.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="390dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/for_search"
+                android:closeIcon="@drawable/search_close"
+                android:iconifiedByDefault="false"
+                android:queryBackground="@null"
+                android:queryHint="원하시는 작품을 검색해 보세요."
+                android:fontFamily="@font/gmarketsansttfmedium"
+                android:searchIcon="@drawable/search_search"
+                android:layout_marginBottom="50dp"/>
+
+            <fragment
+                android:id="@+id/fragmentContainer"
+                android:name="com.example.ottproject.Fragment.Fragment_SearchResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            </fragment>
+
+</LinearLayout>

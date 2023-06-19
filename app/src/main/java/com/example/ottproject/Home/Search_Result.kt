@@ -8,7 +8,7 @@ class Search_Result : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.search_result)
+        setContentView(R.layout.search)
     }
 
 }

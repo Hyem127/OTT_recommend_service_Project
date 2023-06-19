@@ -8,17 +8,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.ottproject.*
-import com.example.ottproject.Contents.ContentsActivity
-import com.example.ottproject.MyPage.My_Contents_List
 import com.example.ottproject.MyPage.My_Write_List
 import com.example.ottproject.Start.FirstActivity
 
 
 class Fragment_Mypage : Fragment() {
 
-    lateinit var contentsButton : Button
     lateinit var logoutButton : Button
-    lateinit var contentslistButton: Button
     lateinit var communitylistButton: Button
 
     override fun onCreateView(
@@ -28,21 +24,9 @@ class Fragment_Mypage : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_mypage, container, false)
 
-        contentsButton = view.findViewById<Button>(R.id.contents_evaluation)
-        contentsButton?.setOnClickListener {
-            val intent = Intent(activity, ContentsActivity::class.java)
-            startActivity(intent)
-        }
-
         logoutButton = view.findViewById<Button>(R.id.logout_button)
         logoutButton?.setOnClickListener {
             val intent = Intent(activity, FirstActivity::class.java)
-            startActivity(intent)
-        }
-
-        contentslistButton = view.findViewById<Button>(R.id.contents_list)
-        contentslistButton?.setOnClickListener {
-            val intent = Intent(activity, My_Contents_List::class.java)
             startActivity(intent)
         }
 

@@ -16,19 +16,36 @@
             android:orientation="vertical"
             android:paddingBottom="70dp">
 
-            <android.widget.SearchView
-                android:layout_width="390dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/for_search"
-                android:closeIcon="@drawable/search_close"
-                android:iconifiedByDefault="false"
-                android:queryBackground="@null"
-                android:queryHint="원하시는 작품을 검색해 보세요."
-                android:fontFamily="@font/gmarketsansttfmedium"
-                android:searchIcon="@drawable/search_search"
-                android:layout_marginBottom="50dp"/>
+                android:layout_marginBottom="50dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/search_search_white"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="6dp">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/go_search"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/for_search"
+                    android:text="원하시는 작품을 검색해 보세요."
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="15dp">
+                </Button>
+
+
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"

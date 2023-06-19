@@ -39,14 +39,13 @@
         <activity android:name=".MainActivity" android:label="MainActivity"/>
         <activity android:name=".Start.LoginActivity" android:label ="LoginActivity"/>
         <activity android:name=".Start.JoinActivity" android:label ="JoinActivity"/>
-        <activity android:name=".Contents.ContentsActivity" android:label ="ContentsActivity"/>
         <activity android:name=".Home.Contents_Information" android:label="Contents_Information"/>
         <activity android:name=".Community_Write" android:label="Contents_Write"/>
         <activity android:name=".Home.OTT_Ranking" android:label="OTT_Ranking"/>
-        <activity android:name=".MyPage.My_Contents_List" android:label="My_Contents_List"/>
         <activity android:name=".MyPage.My_Write_List" android:label="My_Write_List"/>
         <activity android:name=".Home.Recommend_All" android:label="Recommend_All"/>
         <activity android:name=".Home.Search_Result" android:label="Search_Result"/>
+        <activity android:name=".SearchActivity" android:label="SearchActivity"/>
     </application>
 
 </manifest>
